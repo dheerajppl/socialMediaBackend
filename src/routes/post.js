@@ -6,7 +6,7 @@ import { auth } from "../middlewares/auth.js"
 import postController from "../controllers/post.controller.js";
 import uploadad from "../middlewares/multer.js";
 
-router.post("/create",auth,  uploadad.single("image"), postController.addNewPost);
+router.post("/create",auth,  postController.addNewPost);
 
 router.post("/",auth,postController.getAllPost);
 

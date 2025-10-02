@@ -81,6 +81,7 @@ const userRegister = async(req, res) =>{
        let payload = {
            _id: userCheck._id,
            name: userCheck.name,
+           username: userCheck.username,
            email: userCheck.email,
            bio: userCheck.bio,
            profilePicture: userCheck.profilePicture,

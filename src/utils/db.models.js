@@ -5,6 +5,7 @@ const dbModels = Object.freeze({
     Message: "Message",
     Post: "Post",
     User: "User",
+    File: "File",
 });
 
 export default dbModels;
